@@ -1,0 +1,52 @@
+# This is a sample output file when you run your master query
+******************************************* Table being used is ABC ******************************************
+
+<< Question 1 >>: 
+
+ 
+ -- 1.	Write an SQL query to retrieve the Department Name of the employee whose ID is 10.
+ 
+ select DepartmentName from employee where EmployeeID=10;
+
+
++------------------+
+| DepartmentName   |
++------------------+
+| Machine Learning |
++------------------+
+------------------------------------------------------------------------------------------------------------------------
+
+
+<< Question 2 >>: 
+
+ 
+ -- 2.	Display data for a given condition:
+ 
+SELECT EMP_ID, LAST_NAME
+FROM EMPLOYEE_TBL
+WHERE EMP_ID = '333333333';
+ select DepartmentName, avg(Salary) from employee group by DepartmentName having avg(Salary)>=85000;
+
+
++----------------+------------+
+| EMP_ID         | LAST_NAME  |
++----------------+------------+
+| 333333333      | Kumar      |
++----------------+------------+
+------------------------------------------------------------------------------------------------------------------------
+
+
+<< Question 3 >>: 
+
+ 
+ -- 3.	And so on...
+
+
++-------------+
+| column_name1|
++-------------+
+| A1          |
+| A3          |
+| A4          |
++-------------+
+------------------------------------------------------------------------------------------------------------------------
